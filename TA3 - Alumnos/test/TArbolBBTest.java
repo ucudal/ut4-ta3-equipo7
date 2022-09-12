@@ -130,19 +130,49 @@ public class TArbolBBTest {
         fail("The test case is a prototype.");
     }
 
+
     /**
-     * Test of obtenerTamanio method, of class TArbolBB.
+     * Test of obtenerTamanio method, of class TElementoAB.
      */
     @Test
-    public void testObtenerTamanio() {
-        System.out.println("obtenerTamanio");
-        TArbolBB instance = new TArbolBB();
-        int expResult = 0;
-        int result = instance.obtenerTamanio();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testObtenerTamanioVacio() {
+        TArbolBB<Integer> a = new TArbolBB<>();
+        assertEquals(a.obtenerTamanio(), 0);
     }
+
+    @Test
+    public void testObtenerTamanioUnElem() {
+        TArbolBB<Integer> a = new TArbolBB<>();
+        TElementoAB<Integer> n = new TElementoAB<>("A", 1);
+
+        a.insertar(n);
+
+        assertEquals(a.obtenerTamanio(), 1);
+        assertEquals(a.buscar("A"), n);
+    }
+
+    @Test
+    public void testObtenerTamanio() {
+        TArbolBB<Integer> a = new TArbolBB<>();
+
+        TElementoAB<Integer> raiz = new TElementoAB<>("D", 4);
+
+        a.insertar(raiz);
+        a.insertar(new TElementoAB<>("A", 1));
+        a.insertar(new TElementoAB<>("C", 3));
+        a.insertar(new TElementoAB<>("F", 6));
+        a.insertar(new TElementoAB<>("E", 5));
+        a.insertar(new TElementoAB<>("B", 2));
+
+        String preOrden = a.preOrden();
+        String inOrden = a.inOrden();
+
+        assertEquals(a.obtenerTamanio(), 6);
+        assertEquals(a.preOrden(), preOrden);
+        assertEquals(a.inOrden(), inOrden);
+        assertEquals(a.obtenerTamanio(), 1 + raiz.getHijoIzq().obtenerTamanio() + raiz.getHijoDer().obtenerTamanio());
+    }
+
 
     /**
      * Test of obtenerNivel method, of class TArbolBB.
