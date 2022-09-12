@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="LAPTOP-APAKLHSH" name="TArbolBBTest" skipped="0" tests="1" time="0.171" timestamp="2022-09-12T23:02:11">
+<testsuite errors="1" failures="0" hostname="LAPTOP-APAKLHSH" name="TArbolBBTest" skipped="0" tests="1" time="0.113" timestamp="2022-09-12T23:17:42">
   <properties>
     <property name="libs.spring-framework300.classpath" value="C:\Program Files\NetBeans-13\netbeans\platform\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-aop-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-aspects-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-beans-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-context-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-context-support-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-core-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-expression-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-instrument-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-jdbc-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-jms-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-orm-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-oxm-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-struts-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-test-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-tx-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-web-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-webmvc-3.2.18.RELEASE.jar;C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.2.18.RELEASE.jar" />
     <property name="javac.test.classpath" value="C:\Users\juanc\Downloads\hamcrest-core-1.3.jar.zip:C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\hamcrest-core-1.3.jar:build/classes:C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\junit-4.13.2.jar:C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\junit-jupiter-api-5.6.0.jar;C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\junit-jupiter-params-5.6.0.jar;C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\junit-jupiter-engine-5.6.0.jar" />
@@ -18,7 +18,7 @@
     <property name="libs.jsp-compilation.src" value="" />
     <property name="libs.JWSAntTasks.javadoc" value="" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TArbolBBTest methods=testObtenerAlturaArbol1Nodo skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\build\test\results\TEST-TArbolBBTest.xml crashfile=C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\build\junitvmwatcher3433524824261258570.properties propsfile=C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\build\junit18177615346665834019.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TArbolBBTest methods=testObtenerAlturaArbolInmutabilidad skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\build\test\results\TEST-TArbolBBTest.xml crashfile=C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\build\junitvmwatcher987490774725146040.properties propsfile=C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\build\junit2770218329035819015.properties" />
     <property name="jdk.debug" value="release" />
     <property name="libs.spring-framework300.src" value="" />
     <property name="javadoc.use" value="true" />
@@ -196,7 +196,7 @@
     <property name="libs.jsp-compilation-syscp.classpath" value="C:\Program Files\NetBeans-13\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\jstl-impl.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar" />
     <property name="libs.jsp-compilation.classpath" value="C:\Program Files\NetBeans-13\netbeans\extide\ant\lib\ant.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\servlet3.1-jsp2.3-api.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\glassfish-jspparser-4.0.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\jsf-2_2\javax.faces.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\jstl-api.jar;C:\Program Files\NetBeans-13\netbeans\extide\ant\lib\ant-launcher.jar" />
     <property name="libs.javaee-api-6.0.classpath" value="C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\javaee-api-6.0.jar" />
-    <property name="javac.includesfile.binary" value="C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\null217608495" />
+    <property name="javac.includesfile.binary" value="C:\Users\juanc\Documents\NetBeansProjects\UT4-TA3.2\ut4-ta3-equipo7\TA3 - Alumnos\null727837736" />
     <property name="libs.javaee-api-7.0.classpath" value="C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\javaee-api-7.0.jar" />
     <property name="sun.cpu.isalist" value="amd64" />
     <property name="libs.restapi.maven-pom" value="" />
@@ -320,7 +320,7 @@
     <property name="line.separator" value="&#xd;&#xa;" />
     <property name="javadoc.additionalparam" value="" />
     <property name="libs.spring-webmvc5.0.classpath" value="C:\Program Files\NetBeans-13\netbeans\java\modules\ext\spring-5\spring-webmvc-5.2.9.RELEASE.jar" />
-    <property name="test.method" value="testObtenerAlturaArbol1Nodo" />
+    <property name="test.method" value="testObtenerAlturaArbolInmutabilidad" />
     <property name="libs.restlib.maven-pom" value="" />
     <property name="javac.debug" value="true" />
     <property name="libs.testng.classpath" value="C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\testng-6.14.3.jar;C:\Program Files\NetBeans-13\netbeans\platform\modules\ext\jcommander-1.78.jar" />
@@ -413,15 +413,16 @@
     <property name="libs.jsp-compiler.classpath" value="C:\Program Files\NetBeans-13\netbeans\enterprise\ant\extra\jspcompile.jar" />
     <property name="libs.javaee-endorsed-api-6.0.classpath" value="C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\javaee6-endorsed\javax.annotation.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\javaee6-endorsed\jaxb-api-osgi.jar;C:\Program Files\NetBeans-13\netbeans\enterprise\modules\ext\javaee6-endorsed\webservices-api-osgi.jar" />
   </properties>
-  <testcase classname="TArbolBBTest" name="testObtenerAlturaArbol1Nodo" time="0.034">
-    <failure message="expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;0&gt; but was:&lt;1&gt;
-	at TArbolBBTest.testObtenerAlturaArbol1Nodo(TArbolBBTest.java:223)
+  <testcase classname="TArbolBBTest" name="testObtenerAlturaArbolInmutabilidad" time="0.013">
+    <error message="Not supported yet." type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Not supported yet.
+	at TArbolBB.preOrden(TArbolBB.java:56)
+	at TArbolBBTest.testObtenerAlturaArbolInmutabilidad(TArbolBBTest.java:258)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-</failure>
+</error>
   </testcase>
-  <system-out><![CDATA[obtenerAlturaArbol1Nodo
+  <system-out><![CDATA[obtenerAlturaArbolInmutabilidad
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
