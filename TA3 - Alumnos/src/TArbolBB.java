@@ -51,6 +51,12 @@ public class TArbolBB<T> implements IArbolBB<T> {
     }
 
     /**
+     */
+    public String preOrden() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
      * @return recorrida en preOrden del arbol, null en caso de ser vacío
      */
     /**
