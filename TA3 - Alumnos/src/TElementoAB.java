@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class TElementoAB<T> implements IElementoAB<T> {
 
     private Comparable etiqueta;
@@ -118,7 +120,19 @@ public class TElementoAB<T> implements IElementoAB<T> {
 
     @Override
     public int obtenerAltura() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int resultIzq = 0;
+        int resultDer = 0;
+        
+        
+        if (hijoIzq != null){
+            resultIzq += hijoIzq.obtenerAltura() + 1;
+        }else if (hijoDer != null){
+            resultDer += hijoDer.obtenerAltura() + 1;
+        }else{
+            return 1;
+        }
+        
+        return Math.max(resultDer , resultIzq);
     }
 
     @Override
