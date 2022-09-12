@@ -226,4 +226,14 @@ public class TElementoABTest {
         fail("The test case is a prototype.");
     }
     
+    
+    @Test
+    public void testObtenerAlturaElemento(){
+        System.out.println("obtenerAlturaElemento");
+        TElementoAB instance = new TElementoAB("Hola", 1);
+        
+        int expResult = 0;
+        int result = instance.obtenerAltura();
+        assertEquals(expResult, result);
+    }
 }

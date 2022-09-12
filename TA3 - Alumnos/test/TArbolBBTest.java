@@ -203,4 +203,62 @@ public class TArbolBBTest {
         fail("The test case is a prototype.");
     }
     
+    @Test
+    public void testObtenerAlturaArbolVacio(){
+        System.out.println("obtenerAlturaArbolVacio");
+        TArbolBB instance = new TArbolBB();
+        int expResult = -1;
+        int result = instance.obtenerAltura();
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testObtenerAlturaArbol1Nodo(){
+        System.out.println("obtenerAlturaArbol1Nodo");
+        TArbolBB instance = new TArbolBB();
+        TElementoAB unElemento = new TElementoAB("Hola", 1); 
+        instance.insertar(unElemento);
+        int expResult = 0;
+        int result = instance.obtenerAltura();
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testObtenerAlturaArbol2Nodo2(){
+        System.out.println("obtenerAlturaArbol2Nodos");
+        TArbolBB instance = new TArbolBB();
+        TElementoAB unElemento = new TElementoAB("Hola", 1); 
+        TElementoAB unElemento2 = new TElementoAB("Hola2", 2); 
+        instance.insertar(unElemento);
+        instance.insertar(unElemento2);
+        int expResult = 1;
+        int result = instance.obtenerAltura();
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testObtenerAlturaArbolInmutabilidad(){
+        System.out.println("obtenerAlturaArbolInmutabilidad");
+        TArbolBB instance = new TArbolBB();
+        TElementoAB unElemento = new TElementoAB("Hola", 1); 
+        TElementoAB unElemento2 = new TElementoAB("Hola2", 2); 
+        instance.insertar(unElemento);
+        instance.insertar(unElemento2);
+        
+        
+        TArbolBB instanceCopy = new TArbolBB();
+        TElementoAB unElementoCopy = new TElementoAB("Hola", 1); 
+        TElementoAB unElemento2Copy = new TElementoAB("Hola2", 2); 
+        instance.insertar(unElementoCopy);
+        instance.insertar(unElemento2Copy);
+        
+        
+        
+        instance.obtenerAltura();
+        String expResult = instanceCopy.preOrden();
+        String result = instance.preOrden();
+        assertEquals(expResult, result);
+    }
+    
+    
 }
