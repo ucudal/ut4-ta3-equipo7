@@ -120,19 +120,16 @@ public class TElementoAB<T> implements IElementoAB<T> {
 
     @Override
     public int obtenerAltura() {
-        int resultIzq = 0;
-        int resultDer = 0;
-        
-        
-        if (hijoIzq != null){
-            resultIzq += hijoIzq.obtenerAltura() + 1;
-        }else if (hijoDer != null){
-            resultDer += hijoDer.obtenerAltura() + 1;
-        }else{
-            return 1;
+        int AltHijoIzq = -1;
+        int AltHijoDer = -1;
+
+        if (hijoIzq != null) {
+            AltHijoIzq = hijoIzq.obtenerAltura();
         }
-        
-        return Math.max(resultDer , resultIzq);
+        if (hijoDer != null) {
+            AltHijoDer = hijoDer.obtenerAltura();
+        }
+        return Math.max(AltHijoIzq,AltHijoDer) + 1;
     }
 
     @Override
